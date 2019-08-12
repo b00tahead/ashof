@@ -1,0 +1,8 @@
+name: 'A&S Hall of Fame'
+type: theme
+description: Theme for Hall of Fame display
+core: 8.x
+
+regions:
+  sidebar_left: 'Sidebar left'
+  content: 'Content'
