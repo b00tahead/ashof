@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.views-view-grid.horizontal {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+h3, p {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3, img {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hof-line-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.hof-line-2 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.hof-line-3 {
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0;
+}
