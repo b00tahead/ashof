@@ -1,3 +1,13 @@
+{% set imagestyle = {
+  '#theme':      'image_style',
+  '#style_name': 'profile_portrait_500_x_840_',
+  '#uri':        node.field_portrait.entity.uri.value,
+  '#alt':        node.field_portrait.alt,
+  '#attributes': { class: 'inductee-portrait' },
+} %}
+
 <div class="inductee-page">
-  <div class="inductee-modal"></div>
+  <div class="inductee-modal">
+    {{ imagestyle }}
+  </div>
 </div>
