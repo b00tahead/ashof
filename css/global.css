@@ -60,7 +60,7 @@ h3, p {
   display: grid;
   padding: 0 80px;
   grid-template-columns: 25% 70%;
-  grid-column-gap: 80px;
+  grid-column-gap: 40px;
 }
 
 .layout-container .layout-content,
@@ -71,6 +71,7 @@ h3, p {
 .layout-content {
   overflow-y: scroll;
   padding-top: 80px;
+  padding-left: 40px;
 }
 
 .hof-logo {
@@ -102,4 +103,18 @@ h3, p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.hof-logo, .layout-content img {
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
+  -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
+  box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
+}
+
+.layout-content img {
+  border-radius: 2px;
+}
+
+.hof-logo {
+  border-radius: 0 0 2px 2px;
 }
