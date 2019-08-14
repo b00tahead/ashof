@@ -47,16 +47,14 @@
 #}
 <div class="layout-container">
 
-  <main role="main">
+  <main role="main" class="main">
+    <aside class="layout-sidebar-left" role="complementary">
+      {{page.sidebar_left}}
+    </aside>
+
     <div class="layout-content">
       {{page.content}}
     </div>
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{page.sidebar_first}}
-      </aside>
-    {% endif %}
 
   </main>
 
