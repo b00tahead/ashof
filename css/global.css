@@ -74,6 +74,11 @@ h3, p {
   padding-left: 40px;
 }
 
+/* Sorry for adding this hack... :( */
+.views-view-grid.horizontal:last-child {
+  padding-bottom: 100px;
+}
+
 .hof-logo {
   padding-top: 50px;
   padding-bottom: 50px;
