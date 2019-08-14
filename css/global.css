@@ -38,6 +38,10 @@ h3, p {
   margin-bottom: 15px;
 }
 
+.hof-line-1, .hof-line-2, .hof-line-3 {
+  width: 220px;
+}
+
 .hof-line-1 a {
   color: #ffffff;
   text-decoration: none;
@@ -59,7 +63,7 @@ h3, p {
 .layout-container .main {
   display: grid;
   padding: 0 80px;
-  grid-template-columns: 25% 70%;
+  grid-template-columns: 25% 72%;
   grid-column-gap: 40px;
 }
 
