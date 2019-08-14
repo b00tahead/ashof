@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: #00339d;
   color: #ffffff;
+  overflow: hidden;
 }
 
 .views-view-grid.horizontal {
