@@ -38,6 +38,11 @@ h3, p {
   margin-bottom: 15px;
 }
 
+.hof-line-1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .hof-line-2 {
   font-size: 12px;
   font-weight: 500;
