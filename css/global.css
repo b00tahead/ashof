@@ -137,7 +137,7 @@ h3, p {
   justify-content: space-between;
 }
 
-.hof-logo, .layout-content img {
+.hof-logo, .layout-content img, .inductee-modal {
   -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
   -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
   box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
@@ -149,4 +149,18 @@ h3, p {
 
 .hof-logo {
   border-radius: 0 0 2px 2px;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inductee-modal {
+  width: 1600px;
+  height: 760px;
+  background-color: #ffffff;
+  border-radius: 2px;
 }
