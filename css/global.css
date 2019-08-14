@@ -22,7 +22,7 @@ h3, p {
   font-family: 'Raleway', sans-serif;
 }
 
-h3, img {
+.layout-content h3, .layout-content img {
   margin: 0;
   margin-bottom: 25px;
 }
