@@ -84,6 +84,8 @@ h3, img {
 .as-logo img {
   max-width: 100%;
   margin-bottom: 0;
+  max-height: 100px;
+  margin-top: 65px;
 }
 
 .layout-sidebar-left > div {
