@@ -4,9 +4,12 @@
 
 body {
   margin: 0;
-  background-color: #00339d;
   color: #ffffff;
   overflow: hidden;
+  background-image: url("../img/memorial.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .views-view-grid.horizontal {
