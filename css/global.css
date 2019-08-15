@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  color: #ffffff;
+  color: #fff;
   overflow: hidden;
   background-image: url("../img/memorial.png");
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  border-bottom: 2px solid #D1AF2B;
+  border-bottom: 2px solid #d1af2b;
 }
 
 .layout-content h1:first-child {
@@ -60,7 +60,7 @@ h3, p {
 }
 
 .hof-line-1 a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ h3, p {
 
 .as-logo {
   padding-bottom: 80px;
-  border-top: 2px solid #D1AF2B;
+  border-top: 2px solid #d1af2b;
 }
 
 .as-logo img {
@@ -138,9 +138,9 @@ h3, p {
 }
 
 .hof-logo, .layout-content img, .inductee-modal, .inductee-portrait {
-  -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
-  box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 .layout-content img,
@@ -157,12 +157,14 @@ h3, p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
 }
 
 .inductee-modal {
   width: 1600px;
   height: 760px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
   position: relative;
 }
@@ -171,4 +173,35 @@ h3, p {
   position: absolute;
   left: 80px;
   top: -40px;
+}
+
+.inductee-details {
+  position: absolute;
+  top: 80px;
+  left: 660px;
+  right: 80px;
+  bottom: 80px;
+}
+
+.inductee-details .year {
+  height: 40px;
+  width: 90px;
+  margin: 0 auto;
+  background-color: #202c5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.inductee-details .display-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #202c5f;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

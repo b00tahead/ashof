@@ -6,8 +6,30 @@
   '#attributes': { class: 'inductee-portrait' },
 } %}
 
+{% set degree1 = content.field_degree_name_1.attributes %}
+
 <div class="inductee-page">
   <div class="inductee-modal">
     {{ imagestyle }}
+    <div class="inductee-details">
+      <div class="year">
+        {{ content.field_induction_year }}
+      </div>
+      <h1 class="display-name">{{ label }}</h1>
+
+      {# If faculty member show department's taught #}
+      {% if content.field_type_of_inductee == 'Faculty' %}
+      <p class="details-row-1">{{ content.field_type_of_inductee }}</p>
+      <p class="details-row-2">
+        {% else %}
+      <p class="details-row-1">
+        {% endif %}
+
+        {# If has degree's, show them #}
+        {{ attributes }}
+
+      </p>
+
+    </div>
   </div>
 </div>
