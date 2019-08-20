@@ -6,7 +6,8 @@
   '#attributes': { class: 'inductee-portrait' },
 } %}
 
-{% set degree1 = content.field_degree_name_1.attributes %}
+{% set degreeName1 = content.field_degree_name_1 %}
+{% set degreeYear1 = content.field_degree_year_1 %}
 
 <div class="inductee-page">
   <div class="inductee-modal">
@@ -18,17 +19,10 @@
       <h1 class="display-name">{{ label }}</h1>
 
       {# If faculty member show department's taught #}
-      {% if content.field_type_of_inductee == 'Faculty' %}
-      <p class="details-row-1">{{ content.field_type_of_inductee }}</p>
-      <p class="details-row-2">
-        {% else %}
-      <p class="details-row-1">
-        {% endif %}
+      {{ content.group_department_container }}
 
-        {# If has degree's, show them #}
-        {{ attributes }}
-
-      </p>
+      {# If has degree's, show them #}
+      {{ content.group_degrees_container }}
 
     </div>
   </div>

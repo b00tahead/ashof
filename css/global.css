@@ -205,3 +205,30 @@ h3, p {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+.degrees-container, .department-container {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #2C2A29;
+}
+
+.degrees-container,
+.department-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.degree-1, .degree-2, .degree-3 {
+  display: flex;
+}
+
+.degree-1 > div:first-child::after,
+.degree-2 > div:first-child::after,
+.degree-3 > div:first-child::after {
+  content: " ";
+  white-space: pre;
+}
+
