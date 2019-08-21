@@ -13,16 +13,24 @@
   <div class="inductee-modal">
     {{ imagestyle }}
     <div class="inductee-details">
-      <div class="year">
-        {{ content.field_induction_year }}
+      <div class="inductee-qf">
+        <div class="year">
+          {{ content.field_induction_year }}
+        </div>
+        <h1 class="display-name">{{ label }}</h1>
+        {{ content.group_department_container }}
+        {{ content.group_degrees_container }}
       </div>
-      <h1 class="display-name">{{ label }}</h1>
 
-      {# If faculty member show department's taught #}
-      {{ content.group_department_container }}
 
-      {# If has degree's, show them #}
-      {{ content.group_degrees_container }}
+      <div class="biography">
+        {{ content.field_short_biography }}
+      </div>
+
+      <div class="button-group">
+        <button class="inductee-btn bio">Full Bio</button>
+        <button class="inductee-btn watch">Watch Video</button>
+      </div>
 
     </div>
   </div>
