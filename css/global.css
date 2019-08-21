@@ -175,6 +175,16 @@ h3, p {
   top: -40px;
 }
 
+.back-arrow {
+  position: absolute;
+  top: 70px;
+  left: 640px;
+  color: #63656A;
+  font-size: 20px;
+  z-index: 1000;
+  padding: 20px;
+}
+
 .inductee-details {
   position: absolute;
   top: 80px;
