@@ -29,7 +29,9 @@
 
       <div class="button-group">
         <button class="inductee-btn bio">Full Bio</button>
-        <button class="inductee-btn watch">Watch Video</button>
+        {% if content.field_video|render %}
+          <button class="inductee-btn watch">Watch Video</button>
+        {% endif %}
       </div>
 
     </div>
