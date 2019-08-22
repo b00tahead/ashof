@@ -47,3 +47,16 @@ function formatDepartment(department) {
 function addCommaAndSpace(departmentDiv) {
   departmentDiv.innerHTML += ",&nbsp;";
 }
+
+function openFullBio() {
+  console.log('biography');
+}
+
+// remove '.active' from parent div
+function closeModal(elementId) {
+  const parentModal = document.getElementById(elementId).parentElement;
+  const modalBackground = document.getElementById("modal-background");
+  parentModal.classList.remove('active');
+  modalBackground.classList.remove('modal-active');
+
+}

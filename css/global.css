@@ -137,14 +137,16 @@ h3, p {
   justify-content: space-between;
 }
 
-.hof-logo, .layout-content img, .inductee-modal, .inductee-portrait {
+.hof-logo, .layout-content img, .inductee-modal, .inductee-portrait,
+.bio-modal {
   -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 .layout-content img,
-.inductee-portrait {
+.inductee-portrait,
+.bio-modal {
   border-radius: 2px;
 }
 
@@ -258,11 +260,13 @@ h3, p {
   line-height: 2;
 }
 
-.inductee-details .biography > div > p:first-child {
+.inductee-details .biography > div > p:first-child,
+.bio-modal p:first-child {
   margin-top: 0;
 }
 
-.inductee-details .biography > div > p:last-child {
+.inductee-details .biography > div > p:last-child,
+.bio-modal p:last-child {
   margin-bottom: 0;
 }
 
@@ -289,4 +293,65 @@ h3, p {
 
 .inductee-details .inductee-btn:nth-child(2) {
   margin-left: 50px;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+
+}
+
+.modal-background.modal-active {
+  background-color: rgba(32, 44, 95, .9);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.bio-modal {
+  background-color: #ffffff;
+  width: 815px;
+  padding: 80px;
+  z-index: 10000;
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: top 0.33s ease-in-out, transform 0.33s ease-in-out;
+}
+
+.bio-modal.active {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bio-modal p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.bio-modal .modal-close {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #63656A;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.bio-modal .modal-close .fa-arrow-left {
+  margin-right: 20px;
 }
