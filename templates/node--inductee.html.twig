@@ -29,9 +29,9 @@
       </div>
 
       <div class="button-group">
-        <button class="inductee-btn bio" onClick="openFullBio()">Full Bio</button>
-        {% if content.field_video|render %}
-          <button class="inductee-btn watch">Watch Video</button>
+        <button class="inductee-btn bio" onClick="openFullBioModal()">Full Bio</button>
+        {% if content.field_vimeo_url|render %}
+          <button class="inductee-btn watch" onClick="openVideoModal()">Watch Video</button>
         {% endif %}
       </div>
 
@@ -39,9 +39,15 @@
   </div>
 </div>
 
-<div id="modal-background" class="modal-background modal-active">
-  <div class="bio-modal active">
+<div id="modal-background" class="modal-background">
+  <div id="bio-modal" class="bio-modal">
     {{ content.field_short_biography }}
     <a id="close-bio" onClick="closeModal('close-bio')" class="modal-close" href="#"><i class="fas fa-arrow-left"></i>Close</a>
+  </div>
+  <div id="video-modal" class="video-modal">
+    {{ content.field_vimeo_url }}
+    <div id="vimeo-iframe" style="padding:56.25% 0 0 0;position:relative;"></div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <a id="close-video" onClick="closeModal('close-video')" class="modal-close" href="#"><i class="fas fa-arrow-left"></i>Close</a>
   </div>
 </div>
