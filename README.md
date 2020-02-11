@@ -1,4 +1,3 @@
-# University of Kentucky College of Arts & Sciences
-## Wall of Fame
+# College of Arts & Sciences Wall of Fame
 
-[Demonstration of app](ashof_demo.gif)
+![Demonstration of app](ashof_demo.gif)
